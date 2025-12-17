@@ -31,7 +31,7 @@ db_password = os.getenv("DB_PASSWORD","postgres")
 
 try:
     conn = psycopg2.connect(host=db_host, port=db_port, database=db_name, user=db_user, password=db_password)
-    df = pd.read_sql("SELECT id, feature1, feature2, feature3, feature4, prediction, timestamp FROM predictions ORDER BY timestamp DESC LIMIT 100", conn)
+    df = pd.read_sql("SELECT id, feature1, feature2, feature3, feature4, prediction, created_at FROM predictions ORDER BY created_at LIMIT 100", conn)
     st.subheader("История предсказаний")
     st.dataframe(df)
     conn.close()
