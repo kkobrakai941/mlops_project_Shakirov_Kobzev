@@ -1,0 +1,1 @@
+# mlops_project_Shakirov_Kobzev
