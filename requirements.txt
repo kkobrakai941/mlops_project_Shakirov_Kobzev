@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+scikit-learn
+pydantic
+streamlit
+requests
+pandas
+psycopg2-binary
+kafka-python
+apache-airflow==2.7.3
+prometheus-client
